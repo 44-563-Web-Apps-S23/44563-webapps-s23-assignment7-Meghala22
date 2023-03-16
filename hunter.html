@@ -80,8 +80,8 @@
                   document.getElementById(id).src = "Rat.jpg";
                   gameOver = true;
                   penalty = penalty-3;
-                  console.log("The image is a mouse "+position);
-                  console.log("The penalty is "+penalty);
+                  console.log("This is mouse"+position);
+                  console.log("penalty is "+penalty);
                   console.log("GameOver");
               }
               else if(position == 21){
@@ -89,8 +89,8 @@
                   document.getElementById(id).src = "Cat.jpg";
                   gameOver = true;
                   penalty = penalty+4;
-                  console.log("The image is a cat "+position);
-                  console.log("The penalty is "+penalty);
+                  console.log("This is cat "+position);
+                  console.log(" penalty is "+penalty);
                   console.log("GameOver");
               }
               else {
@@ -171,7 +171,7 @@
           console.log("The col1 is "+col1);
          
           if((row==row1)){
-              console.log("Entered the first row to compare");
+              console.log("Enter the first row ");
               if(col>col1){
                   if(col1+1==col){
                     penalty=penalty+2;
@@ -179,14 +179,14 @@
                 
                   }
                   else{
-                      console.log("else in the first compare");
+                      console.log("else first compare");
                        document.getElementById("help").innerHTML="sorry, no help available";
                  
                        }
       
               }
               else{
-                  console.log("Entered the else part");
+                  console.log("Enter else part");
                   if(col1-1==col){
                     penalty=penalty+2;
                       document.getElementById("help").innerHTML="squeak";
